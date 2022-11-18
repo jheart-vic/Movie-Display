@@ -66,7 +66,9 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-```sh git clone https://github.com/jheart-vic/movie-display.git```
+```sh
+ git clone https://github.com/jheart-vic/movie-display.git
+```
 
 ### Install
 
