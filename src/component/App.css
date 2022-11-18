@@ -1,0 +1,168 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px;
+  box-shadow: 0 11px 35px 2px rgba(0, 0, 0, 0.14);
+  cursor: pointer;
+}
+
+.spinner {
+  height: 80px;
+  margin: auto;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.App-header h2 {
+  margin: 0;
+}
+
+.add-movies {
+  text-align: center;
+}
+
+.add-movies button {
+  font-size: 16px;
+  padding: 8px;
+  margin: 0 10px 30px 10px;
+}
+
+.movie {
+  padding: 5px 25px 10px 25px;
+  max-width: 25%;
+  border-radius: 1.5em;
+  box-shadow: 0 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.errorMessage {
+  margin: auto;
+  font-weight: bold;
+  color: rgb(161, 15, 15);
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.searchInput,
+.searchBtn {
+  border-radius: 1.5em;
+  box-shadow: 0 11px 35px 2px rgba(0, 0, 0, 0.14);
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+.switchLabel {
+  border-radius: 1.5em;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#light {
+  background-color: #f3ebf6;
+  color: #282c34;
+}
+
+#dark {
+  background-color: #282c34;
+  color: white;
+}
+
+#light .App-header {
+  background-color: #f3ebf6;
+  color: #282c34;
+}
+
+#light .movie {
+  background-color: #f3ebf6;
+  color: #282c34;
+}
+
+#dark .App-header {
+  background-color: #282c34;
+  color: #f3ebf6;
+}
+
+#light .switchLabel {
+border: 1px solid #282c34;
+}
+
+#dark .movie {
+  background-color: #f3ebf6;
+  color: #282c34;
+}
+
+#dark .searchBtn {
+  background-color: #f3ebf6;
+  color: #282c34;
+}
+
+input[type="submit"] {
+  padding: 5px;
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+  width: 80px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #282c34;
+  color: antiquewhite;
+}
+
+.search > input[type="text"]{
+  width: 40%;
+  min-width: 170px;
+}
+
+@media screen and (min-width: 694px) and (max-width: 915px) {
+  .movie {
+    max-width: 33%;
+  }
+}
+
+@media screen and (min-width: 652px) and (max-width: 693px) {
+  .movie {
+    max-width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 651px) {
+  .movie {
+    max-width: 100%;
+    margin: auto;
+  }
+}
