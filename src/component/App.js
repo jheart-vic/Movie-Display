@@ -94,7 +94,7 @@ const App = () => {
 
     return (
       <ThemeContext.Provider value={{theme, toggleTheme}}>
-    <div className="App" id={theme} onLoad={themeToggler}>
+    <div className="App" id={theme} >
       <Header text="Movies Arena" />
       <div className="d-flex justify-content-end mt-2 gap-5">
         <small className="switchLabel" >{theme === "light" ? "Dark Mode" : "Light Mode"}</small>
